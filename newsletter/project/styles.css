@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Roboto:wght@100;400&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #37384E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+main{
+    position: absolute;
+    background-color: white;
+    color: #37384E;
+    padding: 50px;
+    width: 1000px;
+    height: 600px;
+    border-radius: 50px;
+}
+.mail-label{
+    display: inline;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+#mail-input{
+    width: 600px;
+    height: 80px;
+    margin-top: 10px;
+    border: 1px solid hsl(231, 7%, 60%);
+    border-radius: 8px;
+}
+
+header {
+    width: 500px;
+    height: 100px;
+    margin: 0;
+    font-size: 24px;
+    padding-bottom: 50px;
+}
+header h1{
+    color: hsl(234, 29%, 20%);
+    font-size: 52px;
+}
+article{
+    width: 600px;
+    height: 354px;
+    position: absolute;
+    margin: 0;
+}
+section{
+    position: absolute;
+    height: 543px;
+    width: 600px;
+}
+aside{
+    position: relative;
+    width: 400px;
+    height: 593px;
+    left: 620px;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+li{
+    display: flex;
+    align-items: center;
+    padding: 10px 0 10px 0;
+
+}
+.btn-c{
+    background-color: hsl(234, 29%, 20%);
+    border: none;
+    border-radius: 8px;
+    font-size: 1.25em;
+    font-weight: 700;
+    cursor: pointer;
+    color: white;
+    width: 600px;
+    height: 80px;
+    margin-top: 30px;
+}
+.btn-c:hover{
+    background-image: linear-gradient(to right, #fe5479, #ff673e);
+    box-shadow:  2px 2px 6px #fe5479, 2px 2px 6px #ff673e;
+}
+.btn-c:active{
+    background-image: linear-gradient(to right, #ab3851, #b34527);
+}
+#success{
+    display: none;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    height: 600px;
+    width: 500px;
+    position: absolute;
+    color: #37384E;
+    padding: 50px;
+    border-radius: 50px;
+    font-size: 1.5rem;
+}
+#success h1{
+    margin: 0;
+}
+#success button{
+    width: 500px;
+}
+#success-image{
+    position: relative;
+    right: 225px;
+    bottom: 20px;
+}
+#error-label{
+    display: none;
+    position: relative;
+    left: 250px;
+    color: #c67b76;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        height: 100vh;
+        background-color: white;
+        font-size: 14px;
+        overflow: hidden;
+    }
+    main{
+        width: 90%;
+        padding: 30px;
+    }
+    section{
+        position: relative;
+        top: 200px;
+        width: 350px;
+        height: 500px;
+    }
+    .btn-c{
+        background-color: hsl(234, 29%, 20%);
+        border: none;
+        border-radius: 3px;
+        font-size: 12px;
+        width: 330px;
+        height: 50px;
+        margin-top: 20px;
+    }
+    .mail-label{
+        display: inline;
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    #mail-input{
+        width: 330px;
+        height: 40px;
+        margin-top: 10px;
+        border: 1px solid hsl(231, 7%, 60%);
+        border-radius: 3px;
+    }
+    header {
+        width: 350px;
+        height: 20px;
+        margin: 0;
+        font-size: 16px;
+        padding-bottom: 50px;
+        margin-bottom: 20px;
+    }
+    header h1{
+        color: hsl(234, 29%, 20%);
+        font-size: 32px;
+    }
+    article{
+        width: 350px;
+        height: 20px;
+        position: absolute;
+        margin: 0;
+    }
+    aside{
+        display: inline;
+        position: relative;
+        right: 720px;
+        bottom: 900px;
+    }
+    #error-label{
+        display: none;
+        position: relative;
+        left: 20px;
+        color: #c67b76;
+    }
+    .right{
+        scale: 111%;
+        position: relative;
+        width: 100%;
+        height: 600px;
+        right: 620px;
+    }
+    #success{
+        display: none;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        padding: 10px;
+        position: absolute;
+        color: #37384E;
+        font-size: 1rem;
+    }
+    #success h1{
+        margin: 0;
+    }
+    #success button{
+        width: 95%;
+    }
+    #success-image{
+        position: relative;
+        left: 10px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    body{
+        scale: 75%;
+    }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <main>
+        <section>
+            <header>  
+                <h1>Stay Updated!</h1>
+                <p>Join 60.000+ product manegers receiving monthly updates on:</p>
+            </header>
+            <article>
+                <ul>
+                    <li class="list"><img src="../assets/images/icon-list.svg" alt="abc"/> Product discovery and building what matters</li>
+                    <li class="list"><img src="../assets/images/icon-list.svg" alt="abc"/> Measuring to ensure updates are a success</li>
+                    <li class="list"><img src="../assets/images/icon-list.svg" alt="abc"/> And much more!</li>
+                </ul>
+                <label class="mail-label" for="mail-input">Email address</label>
+                <label id="error-label" for="mail-input">Please enter a valid email address</label>
+                <input id="mail-input" name="mail-input" type="text" placeholder="email@company.com">
+                <button class="btn-c" id="btn">Subscribe to monthly newsletter</button>
+            </article>
+        </section>
+        <aside>
+            <img class="right" src="../assets/images/illustration-sign-up-desktop.svg" alt="cc" />
+        </aside>
+    </main>
+    <div id="success"> <img id="success-image" src="../assets/images/icon-success.svg" alt="cc" /><h1>Thanks for subscribing!</h1> <p>A confirmation email has been sent to <strong id="mail"></strong>  Please open it and click the button inside to confirm your subscription.</p> <button id="dismiss" class="btn-c">Dismiss message</button> </div>
+    <script src="app.js"></script>
+</body>
+</html>
